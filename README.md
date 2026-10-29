@@ -60,6 +60,3 @@ I scraped multiple pages and saved the data into a CSV file.
 ```bash
 pip install requests beautifulsoup4
 
-## Author
-Okolie Ifeanyi Emmanuel
-CodeAlpha Intern
