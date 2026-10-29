@@ -1,33 +1,65 @@
-# CodeAlpha Web Scraping Project
+# CodeAlpha Web Scraping & Analysis Project
 
 ## Project Overview
-This project is part of the CodeAlpha Data Analytics Internship (Task 1 - Web Scraping).
+This project is part of the **CodeAlpha Data Analytics Internship**.  
+It covers **Task 1 (Web Scraping)** and **Task 2 (Exploratory Data Analysis)**.
 
-I scraped book data from the website: https://books.toscrape.com/
+I scraped book data from an online bookstore and performed basic exploratory analysis on the collected dataset.
 
-## Tools Used
+---
+
+## Tools & Technologies Used
 - Python
-- BeautifulSoup4
+- BeautifulSoup
 - Requests
-- Pandas
+- CSV module
 
-## What I Scraped
+---
+
+## Project Structure
+- `scrape_books.py` → Web scraping script
+- `eda_books.py` → Exploratory Data Analysis script
+- `books_data.csv` → Raw scraped data
+- `books_data_cleaned.csv` → Cleaned version of the data (if available)
+
+---
+
+## Web Scraping Summary
+I used Python with BeautifulSoup and Requests to extract the following information from the website:
+
 - Book Title
 - Price
-- Rating (1 to 5)
+- Rating
 - Availability
 
-## Dataset
-- Total books scraped: 100
-- File name: books_data_cleaned.csv
+I scraped multiple pages and saved the data into a CSV file.
 
-## How to Run the Code
+---
+
+## Exploratory Data Analysis (EDA) Summary
+
+**Key Findings from EDA:**
+
+- The dataset contains **100 books**.
+- Columns available: Title, Price, Rating, and Availability.
+- Rating Distribution is quite balanced:
+  - Rating 1: 22 books
+  - Rating 2: 19 books
+  - Rating 3: 22 books
+  - Rating 4: 18 books
+  - Rating 5: 19 books
+- All 100 books are **In Stock**.
+- No missing values were found.
+- The data is clean and ready for visualization.
+
+---
+
+## How to Run the Project
+
 1. Install the required libraries:
-   pip install requests beautifulsoup4 lxml pandas
-
-2. Run the script:
-   python scrape_books.py
+```bash
+pip install requests beautifulsoup4
 
 ## Author
-[Okolie Ifeanyi Emmanuel]
+Okolie Ifeanyi Emmanuel
 CodeAlpha Intern
