@@ -76,10 +76,12 @@ I created the following visualizations using Matplotlib and Seaborn:
 ## How to Run the Project
 
 1. Install the required libraries:
-pip install requests beautifulsoup4 lxml pandas matplotlib seaborn
+
+   pip install requests beautifulsoup4 lxml pandas matplotlib seaborn
 
 2. Run the script:
-   python scrape_books.py
+
+    python scrape_books.py
 
 ## Author
 Okolie Ifeanyi Emmanuel
