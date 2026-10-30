@@ -1,48 +1,49 @@
-# CodeAlpha Web Scraping & Analysis Project
+# CodeAlpha Data Analytics Internship
 
 ## Project Overview
-This project is part of the **CodeAlpha Data Analytics Internship**.  
-It covers **Task 1 (Web Scraping)** and **Task 2 (Exploratory Data Analysis)**.
+This repository contains my work for the CodeAlpha Data Analytics Internship.  
+It currently covers:
 
-I scraped book data from an online bookstore and performed basic exploratory analysis on the collected dataset.
+- **Task 1: Web Scraping**
+- **Task 2: Exploratory Data Analysis (EDA)**
+- **Task 3: Data Visualization**
+
+I scraped book data from an online bookstore, performed exploratory analysis, and created clear visualizations.
 
 ---
 
 ## Tools & Technologies Used
 - Python
-- BeautifulSoup
+- BeautifulSoup4
 - Requests
-- CSV module
+- Pandas
+- Matplotlib
+- Seaborn
 
 ---
 
-## Project Structure
-- `scrape_books.py` → Web scraping script
-- `eda_books.py` → Exploratory Data Analysis script
-- `books_data.csv` → Raw scraped data
-- `books_data_cleaned.csv` → Cleaned version of the data (if available)
+## Task 1: Web Scraping
 
----
+**Website scraped:** https://books.toscrape.com/
 
-## Web Scraping Summary
-I used Python with BeautifulSoup and Requests to extract the following information from the website:
-
+**Data collected:**
 - Book Title
 - Price
-- Rating
+- Rating (1–5)
 - Availability
 
-I scraped multiple pages and saved the data into a CSV file.
+**Files:**
+- `scrape_books.py` → Web scraping script
+- `books_data_cleaned.csv` → Cleaned dataset (100 books)
 
 ---
 
-## Exploratory Data Analysis (EDA) Summary
+## Task 2: Exploratory Data Analysis (EDA)
 
-**Key Findings from EDA:**
-
+**Key Findings:**
 - The dataset contains **100 books**.
 - Columns available: Title, Price, Rating, and Availability.
-- Rating Distribution is quite balanced:
+- **Rating Distribution**:
   - Rating 1: 22 books
   - Rating 2: 19 books
   - Rating 3: 22 books
@@ -54,9 +55,26 @@ I scraped multiple pages and saved the data into a CSV file.
 
 ---
 
+## Task 3: Data Visualization
+
+I created the following visualizations using Matplotlib and Seaborn:
+
+1. Number of Books by Rating
+2. Average Book Price by Rating
+3. Distribution of Book Prices
+4. Box Plot of Price by Rating
+
+**Files:**
+- `visualization.py`
+- `chart1_books_by_rating.png`
+- `chart2_avg_price_by_rating.png`
+- `chart3_price_distribution.png`
+- `chart4_price_boxplot.png`
+
+---
+
 ## How to Run the Project
 
 1. Install the required libraries:
 ```bash
-pip install requests beautifulsoup4
-
+pip install requests beautifulsoup4 lxml pandas matplotlib seaborn
